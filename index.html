@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>JavaScript Variables</title>
+  <meta charset="UTF-8">
+  <title>Introduction Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #result {
+      white-space: pre-wrap; /* Preserves newlines and tabs */
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-    <div>
-        <div id="result">Replace Me</div>
-    </div>
-    <script src="index.js"></script>
+  <h1>Special Characters in JavaScript String</h1>
+  <div id="result"></div>
+
+  <script>
+    // Define a string variable named introduction
+    const introduction = "Hello!\n\tMy name is Alex.\nHere's a single quote: '\nHere's a double quote: \"\nAnd here's a backslash: \\";
+
+    // Assign the string to the innerHTML of the element with id "result"
+    document.getElementById("result").innerHTML = introduction;
+  </script>
 </body>
 </html>
